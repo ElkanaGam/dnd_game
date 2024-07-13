@@ -2,6 +2,24 @@ $(function() {
     var canvas = document.getElementById("gameBoard");
     var ctx = canvas.getContext("2d");
 
+    // Set canvas size to fit the screen
+    function resizeCanvas() {
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+
+        // Optionally, keep the canvas square based on the smaller dimension
+        var size = Math.min(screenWidth, screenHeight);
+
+        canvas.width = size;
+        canvas.height = size;
+    }
+
+    // Call resizeCanvas initially and when the window is resized
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+   
+
     var boardSize = 10;
     var cellSize = canvas.width / boardSize;
     
