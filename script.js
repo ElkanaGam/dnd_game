@@ -15,13 +15,13 @@ $(function() {
     }
 
     // Call resizeCanvas initially and when the window is resized
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
+    
 
    
 
     var boardSize = 10;
     var cellSize = canvas.width / boardSize;
+    console.log(cellSize)
     
     function drawBoard() {
         for (var i = 0; i < boardSize; i++) {
