@@ -1,0 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: lightgray; /* Just to visualize the free space */
+}
+
+#gameBoard {
+    border: 2px solid black; /* Border to visualize the canvas */
+    box-sizing: border-box; /* Include border in the element's total width and height */
+}
